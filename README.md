@@ -7,55 +7,35 @@
 [![downloads](https://badgen.net/npm/dt/marked)](https://www.npmjs.com/package/marked)
 [![github actions](https://github.com/markedjs/marked/workflows/Tests/badge.svg)](https://github.com/markedjs/marked/actions)
 [![snyk](https://snyk.io/test/npm/marked/badge.svg)](https://snyk.io/test/npm/marked)
-
 - ⚡ built for speed
 - ⬇️ low-level compiler for parsing markdown without caching or blocking for long periods of time
 - ⚖️ light-weight while implementing all markdown features from the supported flavors & specifications
 - 🌐 works in a browser, on a server, or from a command line interface (CLI)
-
 ## Demo
-
 Check out the [demo page](https://marked.js.org/demo/) to see Marked in action ⛹️
-
 ## Docs
-
 Our [documentation pages](https://marked.js.org) are also rendered using marked 💯
-
 Also read about:
-
 * [Options](https://marked.js.org/using_advanced)
 * [Extensibility](https://marked.js.org/using_pro)
-
 ## Compatibility
-
 **Node.js:** Only [current and LTS](https://nodejs.org/en/about/releases/) Node.js versions are supported. End of life Node.js versions may become incompatible with Marked at any point in time.
-
 **Browser:** [Baseline Widely Available](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility)
-
 ## Installation
-
-**CLI:**
-
+**CLI:*
 ```sh
 npm install -g marked
 ```
-
 **In-browser:**
-
 ```sh
 npm install marked
 ```
-
 ## Usage
-
 ### Warning: 🚨 Marked does not [sanitize](https://marked.js.org/using_advanced#options) the output HTML. Please use a sanitize library, like [DOMPurify](https://github.com/cure53/DOMPurify) (recommended), [sanitize-html](https://github.com/apostrophecms/sanitize-html) or [insane](https://github.com/bevacqua/insane) on the *output* HTML! 🚨
-
 ```
 DOMPurify.sanitize(marked.parse(`<img src="x" onerror="alert('not happening')">`));
 ```
-
 **CLI**
-
 ``` bash
 # Example with stdin input
 $ marked -o hello.html
@@ -64,23 +44,18 @@ hello world
 $ cat hello.html
 <p>hello world</p>
 ```
-
 ```bash
 # Print all options
 $ marked --help
 ```
-
 **Node.js**
-
 ```js
 import { marked } from 'marked';
 const html = marked.parse('# Marked in Node.js');
 console.log(html);
 ```
-
-**Browser**
-
-```html
+**Browser*
+```htm
 <!doctype html>
 <html>
 <head>
@@ -98,7 +73,6 @@ console.log(html);
 </html>
 ```
 or import esm module
-
 ```html
 <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
@@ -106,8 +80,6 @@ or import esm module
     marked.parse('# Marked in the browser\n\nRendered by **marked**.');
 </script>
 ```
-
-## License
-
+## Licensee
 Copyright (c) 2018+, MarkedJS. (MIT License)
 Copyright (c) 2011-2018, Christopher Jeffrey. (MIT License)
