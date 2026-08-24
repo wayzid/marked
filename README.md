@@ -1,9 +1,7 @@
 <a href="https://marked.js.org">
   <img width="60px" height="60px" src="https://marked.js.org/img/logo-black.svg" align="right" />
 </a>
-
 # Marked
-
 [![npm](https://badgen.net/npm/v/marked)](https://www.npmjs.com/package/marked)
 [![install size](https://badgen.net/packagephobia/install/marked)](https://packagephobia.now.sh/result?p=marked)
 [![downloads](https://badgen.net/npm/dt/marked)](https://www.npmjs.com/package/marked)
